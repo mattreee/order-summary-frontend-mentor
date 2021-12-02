@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background-color: #e0e8ff;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+  }
+}
+
+.head-image {
+  width: clamp(300px, 65vmin, 850px);
+  border-radius: 15px 15px 0 0;
+  margin-top: 5vmin;
+}
+
+.card {
+  width: clamp(300px, 65vmin, 850px);
+  background-color: white;
+  position: relative;
+  padding: 0 3rem;
+  padding-bottom: 2rem;
+  border-radius: 0 0 15px 15px;
+  -webkit-box-shadow: 5px 3px 25px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 3px 25px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  font-size: 4vmin;
+  font-weight: 900;
+  text-align: center;
+}
+
+.card .card-desc {
+  color: #7280a7;
+  text-align: center;
+  font-size: 16px;
+}
+
+.card-payment {
+  background: #f5f7ff;
+  padding: 1.2rem 1rem;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-payment .pay-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.card-payment img {
+  width: clamp(10px, 20%, 36px);
+  margin-right: 1rem;
+}
+
+.card-payment .plan {
+  font-weight: 900;
+}
+
+.card-payment .price {
+  color: #7280a7;
+}
+
+.card-payment .pay-plan-change-button {
+  cursor: pointer;
+  color: #3829e0;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.card-payment .pay-plan-change-button:hover,
+.card-payment .pay-plan-change-button:active {
+  color: #7280a7;
+}
+
+.payment-button {
+  background: #3829e0;
+  text-align: center;
+  color: white;
+  padding: .7rem 0;
+  border-radius: 9px;
+  font-size: .9em;
+  font-weight: 700;
+}
+
+.payment-button:hover {
+  cursor: pointer;
+  background-color: #6255e7;
+}
+
+.cancel-order-button {
+  text-align: center;
+  color: #7280a7;
+  margin-top: 1rem;
+  font-size: .9em;
+}
+
+.cancel-order-button:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 250px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
